@@ -1,0 +1,1 @@
+export { BannerHotDog } from './BannerHotDog'

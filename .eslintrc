@@ -1,0 +1,40 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": 0,
+    "react/jsx-filename-extension": [
+      0
+    ],
+    "import/no-default-export": "error",
+    "import/prefer-default-export": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "none",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 90,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "parser": "babylon"
+      }
+    ]
+  },
+  "parser": "babel-eslint"
+}

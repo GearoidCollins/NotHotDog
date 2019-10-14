@@ -1,11 +1,9 @@
-import { FileSystem } from 'expo';
 import { get } from 'lodash';
 
 const GOOGLE_VISION_API = '';
 
-export const submitToGoogle = async photo => {
+export const submitToGoogle = async base64 => {
   try {
-    const base64 = await FileSystem.readAsStringAsync(photo.uri, { encoding: 'base64' });
     const response = await fetch(
       `https://vision.googleapis.com/v1/images:annotate?key=${GOOGLE_VISION_API}`,
       {

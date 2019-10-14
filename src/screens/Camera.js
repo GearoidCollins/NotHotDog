@@ -35,14 +35,19 @@ export class CameraScreen extends Component {
   takePicture = () => {
     if (this.camera) {
       this.setState({ loading: true });
-      this.camera.takePictureAsync({ onPictureSaved: this.onPictureSaved });
+      this.camera.takePictureAsync({
+        quality: 0.4, // float between 0 and 1.0
+        base64: true,
+        doNotSave: true,
+        onPictureSaved: this.onPictureSaved,
+      });
     }
   };
 
   handleMountError = ({ message }) => console.error(message);
 
-  onPictureSaved = async photo => {
-    const contains = await submitToGoogle(photo);
+  onPictureSaved = async ({ base64 }) => {
+    const contains = await submitToGoogle(base64);
 
     this.setState({
       showBanner: true,

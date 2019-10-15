@@ -1,10 +1,13 @@
-# Not Hot Dog (See Food)
+# NotHotDog (SeeFood)
 
 As we are avid fans of the HBO series Silicon Valley I decided to take some inspiration from one of their episodes to build out a groundbreaking app. In Season 4 Episode 3 they come up with the idea of **"Shazam for food"** and call it "**[SeeFood](https://www.youtube.com/watch?time_continue=2&v=LDQcgkDn0yU)**".
 
 To build this we decided to integrate with **[Google's Vision API](https://cloud.google.com/vision/docs/labels)** to identify image properties and build the whole thing in React Native using the fantastic cross-platform development tool **[Expo](https://expo.io/)**.
 
 :warning:**This was thrown together as boilerplate code for us to play with on a Friday and by no means is production ready.*
+
+
+![SeeFood in action](https://github.com/GearoidCollins/NotHotDog/blob/master/assets/SeeFoodFlow.gif)
 
 
 ## Prerequisites

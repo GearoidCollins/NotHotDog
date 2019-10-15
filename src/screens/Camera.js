@@ -55,7 +55,7 @@ export class CameraScreen extends Component {
       isHotDog: contains.some(item => item.includes('Hot dog'))
     })
 
-    delay(() => this.setState({ showBanner: false }), 5000);
+    delay(() => this.setState({ showBanner: false }), 3000);
 
   };
 

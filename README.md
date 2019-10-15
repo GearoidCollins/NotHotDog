@@ -1,4 +1,4 @@
-# NotHotDog (SeeFood)
+# 🌭 NotHotDog (SeeFood)
 
 As we are avid fans of the HBO series Silicon Valley I decided to take some inspiration from one of their episodes to build out a groundbreaking app. In Season 4 Episode 3 they come up with the idea of **"Shazam for food"** and call it "**[SeeFood](https://www.youtube.com/watch?time_continue=2&v=LDQcgkDn0yU)**".
 
